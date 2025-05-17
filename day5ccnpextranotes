@@ -1,0 +1,75 @@
+Galawang Encor CCNP: 
+1. SSO: Single sign-on Global access.
+withSALAPI: using OKTA authentication
+noSALAPI: active directory Azure
+DUKHA: on-prem ADS with license crack! 
+
+Rule0: All CCNP ENCOR Must be DNS Experts.
+Rule1: All CCNP Expert sa AD,Radius,Wireless: 
+
+give MS all Cisco Power!
+shell:priv-lvl=15
+
+config t
+aaa new-model
+radius-server host 10.21.1.8 key aaaaaaaa
+ip radius source-interface vlan 1
+aaa authorization exec default group radius
+aaa authentication login degault group radius local 
+line vty 0 14
+ login authentication default 
+end
+
+
+https://coda.io/d/encorXenarsiDay5_d8gcXy6sZiM
+
+
+Mas madali telnet
+config t
+username admin privilege 15 secret pass
+line vty 0 14
+transport input all
+login local
+exec=-timeout 0 0
+end 
+wr
+
+
+int gi 1
+ ip add 208.8.8.12 255.255.255.0
+ no shut
+
+int gi 1
+ ip add 208.8.8.13 255.255.255.0
+
+ no shut
+
+
+
+
+
+
+
+
+
+
+config t
+no monitor session 11
+monitor session 11 source interface fa0/5,fa0/7 both
+monitor session 11 destination interface fa0/1
+end
+
+
+conf t
+hostname R2
+int gi0/0
+no shut
+ip add 50.0.0.2 255.0.0.0
+end
+
+conf t
+hostname R4
+int gi0/0
+no shut
+ip add 50.0.0.4 255.0.0.0
+end
